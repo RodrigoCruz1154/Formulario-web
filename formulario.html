@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <h1 align="center" style="background-color: forestgreen;color: floralwhite">¡Crea una cuenta!</h1>
+    <form action="#">
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="color:darkblue;font-size: 2em;background: lightskyblue;border: 4px solid white">Datos Personales</legend>
+                <br>
+                <label for="name">Nombre: </label>
+                <input type="text" name="nombre" id="name" placeholder="Nombre" required><br>
+                <br>
+                <label for="lastname">Apellido: </label>
+                <input type="text" name="apellido" id="lastname" placeholder="Apellido" required><br>
+                <br>
+                <label for="fecha">Fecha de nacimiento: </label>
+                <input type="date" name="fecha" id="fecha" required><br>
+                <br>
+
+                <label for="animal">Animal favorito: </label>
+                <input type="text" name="animal" id="animal" placeholder="León"><br>
+                <br>
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="color:darkblue;font-size: 2em;background: lightskyblue;border: 4px solid white" align="center">Tu
+                    cuenta</legend>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required placeholder="alguien@example.com" size="30"><br>
+                <br>
+                <label for="password">Contraseña: </label>
+                <input type="password" name="contraseña" id="password" required pattern=".{6,10}" title="La contraseña debe contener entre 6 y 10 caracteres"
+                    placeholder="Contraseña" size="27">
+                <input type="password" name="username" id="password2" required pattern=".{6,10}" title="La contraseña debe contener entre 6 y 10 caracteres"
+                    placeholder="Vuelve a escribir tu constaseña" size="27"><br>
+                <br>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" required min="18" placeholder="21"><br>
+                <br>
+            </fieldset>
+        </section>
+        <br>
+        <section>
+            <fieldset style="background-color:whitesmoke">
+                <legend style="color:darkblue;font-size: 2em;background: lightskyblue;border: 4px solid white" align="right">Información
+                    de contacto</legend>
+                <label for="address">Dirección: </label>
+                <input type="text" name="dirección" id="address" required placeholder="UCA. 2da Planta edificio Jon de Cortina">                <br>
+                <br>
+                <label for="city">Ciudad: </label>
+                <input type="text" name="Ciudad" id="city" required placeholder="Antiguo Cuscatlán"><br>
+                <br>
+                <label for="country">País: </label>
+                <input type="text" name="país" id="country" required placeholder="El Salvador"><br>
+                <br>
+                <label for="phone">Teléfono: </label>
+                <input type="tel" name="telefono" id="phone" required placeholder="Teléfono fijo o celular">
+            </fieldset>
+        </section>
+        <section>
+            <br>
+            <button type="submit" style="border-color:black; font-size: 1em;background:darkorange"><b>Registrarte</b></button>
+        </section>
+    </form>
+</body>
+
+</html>
